@@ -43,4 +43,5 @@ $ go run main.go 3
 
 Does this solve all the problems? No
 
-The assumption made here is that if the transaction does not fail on the eth_sendRawTransaction endpoint his nonce will be increased. That is not completely true, there are a couple of side cases in which that may not happen (see test TestTxnFailsOnEVMAndNonceNotIncreased in main_test.go).
+The assumption made here is that if the transaction does not fail on the eth_sendRawTransaction endpoint his nonce will be increased. That is not completely true, there are a couple of side cases in which that may not happen (see test TestTxnFailsOnEVMAndNonceNotIncreased in main_test.go). We would need some sort of extra routine to keep track of all the pending transactions and making sure that they are really executed.
+
