@@ -1,3 +1,4 @@
+Dummy change
 
 This program describes techniques that can be used to increment the nonce of an ethereum dapp. It simulates the parallel execution of transactions. It runs 50 iterations that send 10 transactions in parallel: 9 of them valid and 1 invalid that fails on the eth_sendTransaction endpoint.
 
